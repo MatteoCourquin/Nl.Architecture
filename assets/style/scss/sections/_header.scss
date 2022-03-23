@@ -1,0 +1,23 @@
+// **** HEADER **** //
+// ================ //
+
+header{
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        .header-logo{
+            font-family: $font-roboto-black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            li:not(.no-padding){
+                padding: 0 20px;
+            }
+        }
+    }
+}

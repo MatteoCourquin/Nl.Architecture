@@ -1,0 +1,152 @@
+@keyframes function {}
+*, *::after, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  padding: 0 7vw;
+  margin: 0 auto;
+  max-width: 1400px;
+  background-image: url("../../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("~/assets/fonts/Roboto-Black.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("~/assets/fonts/Roboto-Light.ttf") format("ttf");
+}
+h1 {
+  font-family: "Roboto Black", "Helvetica", sans-serif;
+}
+
+p {
+  font-family: "Roboto Ligt", "Helvetica", sans-serif;
+  font-size: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #070707;
+  font-size: 16px;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-black {
+  background: #070707;
+  color: #f1f1f1;
+}
+
+.btn-violet {
+  padding: 16px 36px;
+  background: #6825FB;
+  color: #f1f1f1;
+}
+
+header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+header .header-nav .header-logo {
+  font-family: "Roboto Black", "Helvetica", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+header .header-nav ul {
+  display: flex;
+  align-items: center;
+}
+header .header-nav ul li:not(.no-padding) {
+  padding: 0 20px;
+}
+
+.hero .hero-top {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+.hero .hero-top .hero-top-img {
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+  background: url("../../../assets/images/hero/img-arch1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-top h1 {
+  position: absolute;
+  right: 0;
+  text-align: end;
+  width: 50vw;
+  font-size: clamp(40px, 5vw, 80px);
+}
+.hero .hero-bottom {
+  display: flex;
+  height: 350px;
+  margin-top: 30px;
+}
+.hero .hero-bottom .hero-bottom-text {
+  margin-top: 50px;
+}
+.hero .hero-bottom .hero-bottom-text p {
+  width: 30%;
+  margin: 20px 0;
+}
+.hero .hero-bottom .hero-bottom-images {
+  position: relative;
+}
+.hero .hero-bottom .hero-bottom-images .hero-bottom-img {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.hero .hero-bottom .hero-bottom-images .hero-bottom-img:nth-of-type(1) {
+  background: url("../../../assets/images/hero/img-arch2.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 450px;
+  height: 500px;
+}
+.hero .hero-bottom .hero-bottom-images .hero-bottom-img:nth-of-type(2) {
+  bottom: -70px;
+  right: 300px;
+  background: url("../../../assets/images/hero/img-arch3.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+}
+
+.description {
+  background: #070707;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 300px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+// **** BUTTONS **** //
+// ================= //
+
+
+button{
+    border: 0;
+    border-radius: 0;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-black{
+    background: $color-black;
+    color: $color-white;
+}
+.btn-violet{
+    padding: 16px 36px;
+    background: $color-violet;
+    color: $color-white;
+}

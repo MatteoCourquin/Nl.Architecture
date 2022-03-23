@@ -1,0 +1,25 @@
+// **** ABSTRACTS **** //
+// =================== //
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./abstracts/functions";
+
+// **** BASE **** //
+// ============== //
+@import "./base/reset";
+@import "./base/typography";
+
+// **** COMPONENTS **** //
+// ==================== //
+@import "./components/buttons";
+
+// **** SECTIONS **** //
+// ================== //
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/description";
+@import "./sections/footer";
+
+
+// sass --watch assets/style/scss/main.scss:assets/style/css/main.css
