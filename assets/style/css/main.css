@@ -27,12 +27,23 @@ body {
   font-family: "Roboto Light";
   src: url("~/assets/fonts/Roboto-Light.ttf") format("ttf");
 }
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("~/assets/fonts/Roboto-Medium.ttf") format("ttf");
+}
 h1 {
   font-family: "Roboto Black", "Helvetica", sans-serif;
+  font-size: clamp(40px, 5vw, 80px);
+}
+
+h2 {
+  font-family: "Roboto Black", "Helvetica", sans-serif;
+  font-size: clamp(20px, 3vw, 60px);
+  margin: 30px 0;
 }
 
 p {
-  font-family: "Roboto Ligt", "Helvetica", sans-serif;
+  font-family: "Roboto Light", "Helvetica", sans-serif;
   font-size: 1.6em;
 }
 
@@ -109,7 +120,6 @@ header .header-nav ul li:not(.no-padding) {
   right: 0;
   text-align: end;
   width: 50vw;
-  font-size: clamp(40px, 5vw, 80px);
 }
 .hero .hero-bottom {
   display: flex;
@@ -204,6 +214,52 @@ header .header-nav ul li:not(.no-padding) {
 .description .container-description .description-right div p {
   margin: 0 20px;
   font-size: 1.6em;
+}
+
+.projects .container-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+.projects .container-projects .card-project-horizontal {
+  width: 100%;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .container-projects .card-project-horizontal .img-project {
+  width: clamp(100px, 100vw, 800px);
+}
+.projects .container-projects .card-project-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.projects .container-projects .card-project-vertical .img-project {
+  width: 500px;
+}
+.projects .card-description-project {
+  margin: 40px 0;
+}
+.projects .card-description-project .year {
+  font-family: "Roboto Light", "Helvetica", sans-serif;
+  font-size: 2em;
+}
+.projects .card-description-project .title {
+  font-family: "Roboto Medium", "Helvetica", sans-serif;
+  font-size: 3.5em;
+  margin: 15px 0;
+}
+.projects .card-description-project a img {
+  width: 90px;
+}
+.projects .numbers-of-project {
+  margin: 40px 0;
+  font-family: "Roboto Black", "Helvetica", sans-serif;
+  font-size: 8em;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #070707;
 }
 
 /*# sourceMappingURL=main.css.map */

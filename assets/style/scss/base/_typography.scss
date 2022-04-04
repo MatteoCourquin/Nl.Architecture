@@ -9,9 +9,20 @@
     font-family: "Roboto Light";
     src: url('~/assets/fonts/Roboto-Light.ttf') format("ttf"),
 }
+@font-face {
+    font-family: "Roboto Medium";
+    src: url('~/assets/fonts/Roboto-Medium.ttf') format("ttf"),
+}
+
 
 h1{
     font-family: $font-roboto-black;
+    font-size: clamp(40px, 5vw, 80px);
+}
+h2{
+    font-family: $font-roboto-black;
+    font-size: clamp(20px, 3vw, 60px);
+    margin: 30px 0;
 }
 
 p{

@@ -2,5 +2,49 @@
 // ==================
 
 .projects{
-
+    .container-projects{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-gap: 50px;
+        .card-project-horizontal{
+            width: 100%;
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-project{
+                width: clamp(100px, 100vw, 800px);
+            }
+        }
+        .card-project-vertical{
+            display: flex;
+            flex-direction: column;
+            .img-project{
+                width: 500px;
+            }
+        }
+    }
+    .card-description-project{
+        margin: 40px 0;
+        .year{
+            font-family: $font-roboto-light;
+            font-size: 2em;
+        }
+        .title{
+            font-family: $font-roboto-medium;
+            font-size: 3.5em;
+            margin: 15px 0;
+        }
+        a img{
+            width: 90px
+        }
+    }
+    .numbers-of-project{
+        margin: 40px 0;
+        font-family: $font-roboto-black;
+        font-size: 8em;
+        color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: $color-black
+    }
 }
