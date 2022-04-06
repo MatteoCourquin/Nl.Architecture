@@ -1,7 +1,8 @@
 // **** HEADER **** //
 // ================ //
 
-header{
+header, footer{
+    padding-bottom: 30px;
     .header-nav{
         display: flex;
         justify-content: space-between;
@@ -17,6 +18,19 @@ header{
             align-items: center;
             li:not(.no-padding){
                 padding: 0 20px;
+            }
+            @media screen and (max-width : 1175px){
+                display: none;
+            }
+        }
+        .burger-menu{
+            display: none;
+            width: 60px;
+            img{
+                width: 100%;
+            }
+            @media screen and (max-width : 1175px){
+                display: block;
             }
         }
     }

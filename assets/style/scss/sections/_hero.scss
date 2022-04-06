@@ -8,9 +8,12 @@
         align-items: center;
         margin-top: 80px;
         position: relative;
+        @media screen and (max-width : 1175px){
+            grid-template-columns: 1fr;
+        }
         .hero-top-img{
             width: 100%;
-            min-width: 400px;
+            min-width: 270px;
             height: 400px;
             background: url("../../../assets/images/hero/img-arch1.jpeg");
             background-position: center;
@@ -21,6 +24,9 @@
             right: 0;
             text-align: end;
             width: 50vw;
+            @media screen and (max-width : 1175px){
+                width: 100%;
+            }
         }
     }
     .hero-bottom{
@@ -32,10 +38,16 @@
             p{
                 width: 30%;
                 margin: 20px 0;
+                @media screen and (max-width : 1175px){
+                    width: 100%;
+                }
             }
         }
         .hero-bottom-images{
             position: relative;
+            @media screen and (max-width : 1175px){
+                display: none;
+            }
             .hero-bottom-img{
                 position: absolute;
                 z-index: 2;
